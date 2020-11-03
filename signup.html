@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+
+
+		<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+</head>
+<body>
+  
+   <style>
+   	 body{
+   	 	background:url(img/drinks4.jpg);
+   	 	
+   	 }
+   	  span{
+   	  	text-align: center;
+   	  	font-weight:800;
+   	  }
+   	  img{
+   	  	max-height:400px;
+   	  	width: 50px;
+   	  }
+   </style>
+
+    
+	<div class="container">
+    <div class="row">
+      <div class="col s12 l8 push-l2 z-depth-5">
+        <div class="card">
+          <div class="card-image">
+          	<div class="first">
+            <img src="img/image2.jpg" alt="" class="responsive-img">
+        </div>
+          </div>
+          <div class="card-content">
+            <span class="card-title">Create Account</span>
+           <div class="container">
+	<div class="row">
+		<div class="col s12 l12">
+			<form id="signup-form">
+				<div class="input-field">
+					<i class="material-icons prefix">email</i>
+					<input type="email" id="signup-email" required/>
+					<label for="signup-email">Email</label>
+				</div>
+				<div class="input-field">
+					<i class="material-icons prefix">lock</i>
+					<input type="password" id="signup-password" required/>
+					<label for="signup-password">Password</label>
+				</div>
+				<div class="input-field">
+					<i class="material-icons prefix">lock</i>
+					<input type="password" id="signup-confirm_password" />
+					<label for="signup-confirm_password">Confirm Password</label>
+				</div>
+				<div class="row">
+					<div class="col push-l5 push-s2">
+				<div class="input-field">
+				<button class="btn green">Sign Up</button>
+				</div>
+			</div>
+			</div>
+                <div class="blink">
+				<p>Already have an account?<a href="signin.html"> Sign In</a></p>
+			</div>
+		
+			</div>
+			
+		</div>
+	</form>
+</div>
+</div>
+
+
+          </div>
+          
+       </div>
+      </div>
+     
+      </div>
+    </div>
+  </div>
+
+ <style>
+	.blink{
+		margin-top:20px;
+	}
+</style>
+
+	 <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-firestore.js"></script>
+
+<script>
+var firebaseConfig = {
+    apiKey: "AIzaSyAqiKVTo5hHui-jTKsbe4YtCHw0LKLdzdE",
+    authDomain: "eatery-d2a1a.firebaseapp.com",
+    databaseURL: "https://eatery-d2a1a.firebaseio.com",
+    projectId: "eatery-d2a1a",
+    storageBucket: "eatery-d2a1a.appspot.com",
+    messagingSenderId: "501639623058",
+    appId: "1:501639623058:web:bf4e02b9aadc7450d5d14b",
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+</script>
+
+
+<script src="scripts/home.js"></script>
+
+	<!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile Setup</title>
+
+		<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+</head>
+<body>
+
+   <style>
+   	 body{
+   	 	background:url(img/forget3.jpg);
+   	 	
+   	 }
+   	  span{
+   	  	text-align: center;
+   	  	font-weight:800;
+   	  }
+   	  img{
+   	  	max-height:400px;
+   	  	width: 50px;
+   	  }
+
+   </style>
+
+<a href="home.html"><i class="material-icons white-text">arrow_backward</i></a>
+	<div class="container">
+    <div class="row">
+      <div class="col s12 l8 push-l2 z-depth-5">
+        <div class="card">
+          <div class="card-image">
+          	<div class="first">
+            <img src="img/forget4.jpg" alt="" class="responsive-img">
+        </div>
+          </div>
+          <div class="card-content">
+            <span class="card-title">Profile Set-up</span>
+
+           <li class="row">
+            <div class="col push-l6 push-s5">
+            <a href="#" class="btn-floating indigo darken-4 z-depth-0">
+            <img src="img/profile pic.jpg" class="responsive-img">
+          </a>
+          
+           </div>
+          </li>
+
+           <div class="container">
+	<div class="row">
+		<div class="col s12 l8">
+			<form action="">
+				<div class="input-field">
+          <div class="row">
+          <div class="col push-s1 push-l5"> 
+          <p style="color: green">Username</p>
+					<h5 style="color: indigo"><input type="text" id="username" placeholder="Username"></h5>
+					</div>
+        </div>
+				</div>
+				<div class="input-field">
+          <div class="row">
+            <div class="col push-s1 push-l5">
+          <p style="color: green">Age</p>
+          <h5><input type="text" id="age" placeholder="age"></h5>
+        </div>
+      </div>
+          
+        </div>
+				<div class="input-field">
+          <div class="row">
+            <div class="col push-s1 push-l5">
+          <p style="color: green">Phone Number</p>
+          <h5><input type="text" id="number" placeholder="mobile number"></h5>
+        </div>
+      </div>
+          
+        </div>
+				<div class="row">
+					<div class="col push-l3 push-s2">
+				<div class="input-field">
+				<button id="addbtn" class="btn green">Add</button>
+				</div>
+			</div>
+      <div class="col push-l4 push-s2">
+        <div class="input-field">
+        <button id="updatebtn" class="btn indigo">Update</button>
+        </div>
+      </div>
+      <div class="col push-l5 push-s2">
+        <div class="input-field">
+        <button id="removebtn" class="btn red">Remove</button>
+        </div>
+      </div>
+			</div>
+
+
+		
+			</div>
+			
+		</div>
+	</form>
+</div>
+</div>
+
+
+          </div>
+          
+       </div>
+      </div>
+     
+      </div>
+    </div>
+  </div>
+
+  
+
+
+
+
+
+
+
+ <style>
+	.blink{
+		margin-top:20px;
+	}
+</style>
+
+   <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-database.js"></script>
+
+<script>
+var firebaseConfig = {
+    apiKey: "AIzaSyAqiKVTo5hHui-jTKsbe4YtCHw0LKLdzdE",
+    authDomain: "eatery-d2a1a.firebaseapp.com",
+    databaseURL: "https://eatery-d2a1a.firebaseio.com",
+    projectId: "eatery-d2a1a",
+    storageBucket: "eatery-d2a1a.appspot.com",
+    messagingSenderId: "501639623058",
+    appId: "1:501639623058:web:bf4e02b9aadc7450d5d14b",
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+<script src="scripts/profile.js"></script>
+
+
+
+
+	<!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+</body>
+</html>
